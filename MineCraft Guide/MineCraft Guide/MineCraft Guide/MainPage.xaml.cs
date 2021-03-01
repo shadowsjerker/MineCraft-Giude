@@ -13,6 +13,12 @@ namespace MineCraft_Guide
         public MainPage()
         {
             InitializeComponent();
+           
+        }
+
+        public void clickHandle(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Page2());
         }
     }
 }
