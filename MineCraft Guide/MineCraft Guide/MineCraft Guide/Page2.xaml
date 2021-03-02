@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MineCraft_Guide.Page2"
+             Title="Search"
+             HeightRequest="720"
+             WidthRequest="720"
+             MinimumHeightRequest="480"
+             MinimumWidthRequest="720"           
+             BackgroundColor="#52527a"
+             >
+    <ContentPage.Content>
+
+        <StackLayout Margin="10" Spacing="5">
+
+            <Entry Placeholder="Search for tools and ..." PlaceholderColor="#001a0f" x:Name="userGet"  CursorPosition="3"  VerticalOptions="StartAndExpand" TextChanged="userGet_TextChanged" BackgroundColor="#00ff99"/>
+
+            <!--<Button x:Name="testButton" Text="Search"  Clicked="testButtonClicked"  Background="PowderBlue"  VerticalOptions="StartAndExpand"/>-->
+
+            <!--<Editor x:Name="userInput" Text=""  VerticalOptions="FillAndExpand"/>-->
+
+            <ListView VerticalOptions="CenterAndExpand" x:Name="sList"
+                  IsVisible="false"
+                  HasUnevenRows="true">
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="10">
+
+                                <StackLayout >
+                                    <Label Text="{Binding name}" FontSize="20"/>
+
+                                    <Label Text="{Binding detail}" FontSize="15"/>
+
+                                </StackLayout>
+
+                                <StackLayout >
+                                    <Image Source="{Binding imageSource}" HeightRequest="100"/>
+                                </StackLayout>
+
+
+                            </Grid>
+
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <!--<Image HeightRequest="300" Source="https://shadowsjerker.github.io/imageSource/164.png" VerticalOptions="FillAndExpand"/>-->
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

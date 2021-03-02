@@ -1,24 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace MineCraft_Guide
 {
-    public partial class MainPage : ContentPage
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Page3 : ContentPage
     {
-        public MainPage()
+        public Page3()
         {
             InitializeComponent();
-           
         }
 
-        public void clickHandle(object sender, EventArgs e)
+        private void Button_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Page2());
+            Navigation.PopToRootAsync();
         }
     }
 }

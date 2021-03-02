@@ -94,5 +94,14 @@
       <Name>MineCraft Guide</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\filename2.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\filename3.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\filename1.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

@@ -1,12 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MineCraft_Guide.Page2">
+             x:Class="MineCraft_Guide.Page3">
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+
+            <Button Text="Go to home page"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" Clicked="Button_Clicked" />
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

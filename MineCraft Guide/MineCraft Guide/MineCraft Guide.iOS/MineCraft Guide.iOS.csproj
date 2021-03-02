@@ -133,4 +133,13 @@
       <Name>MineCraft Guide</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\filename2.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\filename3.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\filename1.txt" />
+  </ItemGroup>
 </Project>

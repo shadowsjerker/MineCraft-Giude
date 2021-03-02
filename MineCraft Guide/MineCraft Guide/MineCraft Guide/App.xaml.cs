@@ -10,7 +10,8 @@ namespace MineCraft_Guide
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new HomePage());
+            
         }
 
         protected override void OnStart()

@@ -10,11 +10,17 @@ using Xamarin.Forms.Xaml;
 namespace MineCraft_Guide
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Page2 : ContentPage
+    public partial class HomePage : ContentPage
     {
-        public Page2()
+        public HomePage()
         {
             InitializeComponent();
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Page2());
+            
         }
     }
 }
