@@ -68,7 +68,7 @@ https://shadowsjerker.github.io/imageSource/68.png
 https://shadowsjerker.github.io/imageSource/69.gif
 https://shadowsjerker.github.io/imageSource/70.png
 https://shadowsjerker.github.io/imageSource/71.png
-lectern
+https://shadowsjerker.github.io/imageSource/72.png
 loom
 beehive
 chain

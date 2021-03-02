@@ -7,20 +7,29 @@
              WidthRequest="720"
              MinimumHeightRequest="480"
              MinimumWidthRequest="720"           
-             BackgroundColor="#52527a"
+             BackgroundColor="#BEB8EB"
+             NavigationPage.BackButtonTitle="برگشت به خانه"
              >
+
+    
+    
     <ContentPage.Content>
+        
+        
 
         <StackLayout Margin="10" Spacing="5">
 
-            <Entry Placeholder="Search for tools and ..." PlaceholderColor="#001a0f" x:Name="userGet"  CursorPosition="3"  VerticalOptions="StartAndExpand" TextChanged="userGet_TextChanged" BackgroundColor="#00ff99"/>
+            <Entry Placeholder="آیتم مورد نظر را سرچ کنید:" PlaceholderColor="#363457" IsSpellCheckEnabled="true" 
+                   ClearButtonVisibility="WhileEditing"  x:Name="userGet" VerticalOptions="StartAndExpand" 
+                   TextChanged="userGet_TextChanged" BackgroundColor="#00000000"
+                   ReturnType="Done" TextColor="#1a1a1a" FontSize="Large" FontFamily="Arial" FontAttributes="None"/>
 
             <!--<Button x:Name="testButton" Text="Search"  Clicked="testButtonClicked"  Background="PowderBlue"  VerticalOptions="StartAndExpand"/>-->
 
             <!--<Editor x:Name="userInput" Text=""  VerticalOptions="FillAndExpand"/>-->
 
             <ListView VerticalOptions="CenterAndExpand" x:Name="sList"
-                  IsVisible="false"
+                  IsVisible="true"
                   HasUnevenRows="true">
 
                 <ListView.ItemTemplate>

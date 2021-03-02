@@ -22,5 +22,12 @@ namespace MineCraft_Guide
             Navigation.PushAsync(new Page2());
             
         }
+        private void Button_Clicked2(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Page3());
+
+        }
+
+        
     }
 }

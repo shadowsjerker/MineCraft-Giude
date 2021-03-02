@@ -95,13 +95,21 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\filename2.txt" />
+    <AndroidAsset Include="Assets\filename2.txt" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\filename3.txt" />
+    <AndroidAsset Include="Assets\filename1.txt" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\filename1.txt" />
+    <AndroidAsset Include="Assets\filename3.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\BackGround.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties TriggeredFromHotReload="False" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>
