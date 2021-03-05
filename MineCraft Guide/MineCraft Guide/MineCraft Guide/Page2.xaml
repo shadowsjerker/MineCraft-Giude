@@ -2,11 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MineCraft_Guide.Page2"
-             Title="Search"
-             HeightRequest="720"
-             WidthRequest="720"
-             MinimumHeightRequest="480"
-             MinimumWidthRequest="720"           
+             Title="Search"         
              BackgroundColor="#BEB8EB"
              NavigationPage.BackButtonTitle="برگشت به خانه"
              >
