@@ -1,8 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MineCraft_Guide.Page2"
-             Title="Search"         
+             Title="Search"
+             HeightRequest="533"
+             WidthRequest="300"
              BackgroundColor="#BEB8EB"
              NavigationPage.BackButtonTitle="برگشت به خانه"
              >
@@ -18,7 +20,7 @@
             <Entry Placeholder="آیتم مورد نظر را سرچ کنید:" PlaceholderColor="#363457" IsSpellCheckEnabled="true" 
                    ClearButtonVisibility="WhileEditing"  x:Name="userGet" VerticalOptions="StartAndExpand" 
                    TextChanged="userGet_TextChanged" BackgroundColor="#00000000"
-                   ReturnType="Done" TextColor="#1a1a1a" FontSize="Large" FontFamily="Arial" FontAttributes="None"/>
+                   ReturnType="Done" TextColor="#1a1a1a" FontSize="Large" FontAttributes="None"/>
 
             <!--<Button x:Name="testButton" Text="Search"  Clicked="testButtonClicked"  Background="PowderBlue"  VerticalOptions="StartAndExpand"/>-->
 
@@ -26,7 +28,7 @@
 
             <ListView VerticalOptions="CenterAndExpand" x:Name="sList"
                   IsVisible="true"
-                  HasUnevenRows="true">
+                  HasUnevenRows="true" >
 
                 <ListView.ItemTemplate>
                     <DataTemplate>
